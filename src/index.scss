@@ -18,6 +18,10 @@ input {
   outline: none;
 }
 
+fieldset {
+  border: none;
+}
+
 
 /* fonts */
 
@@ -61,8 +65,8 @@ button {
 
 :root {
   --color-bg: #eee;
-  --color-main: #393E46;
-  --color-secondary: #222831;
+  --color-main: #222831;
+  --color-secondary: #999;
   --color-accent: #00ADB5;
   --color-white: #fff;
   --color-warning: #ff746c;

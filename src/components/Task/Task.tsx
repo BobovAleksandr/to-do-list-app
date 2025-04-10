@@ -24,7 +24,7 @@ const Task = ({ id, text, isCompleted }: TaskProps) => {
         <button className={clsx('button', styles.buttonCheck)}>
           <img
             src={'/icons/check.svg'}
-            alt="Выполнить задачу"
+            alt={isCompleted ? 'Снять отметку выполнения' : "Отметить как выполненную"}
             className={clsx('buttonIcon', styles.iconArrow)}
           />
         </button>
