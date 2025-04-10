@@ -1,0 +1,17 @@
+/* reset */
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* global styles */
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: var(--montserrat), sans-serif;
+}
