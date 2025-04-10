@@ -1,17 +1,70 @@
 /* reset */
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
-
-/* global styles */
 
 li {
   list-style: none;
 }
 
-body {
-  font-family: var(--montserrat), sans-serif;
+input {
+  font: inherit;
+  border: none;
+  outline: none;
 }
+
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--color-main);
+}
+
+/* global styles */
+
+.button {
+  height: 100%;
+  width: 3rem;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.buttonIcon {
+  display: block;
+  max-width: 2rem;
+  aspect-ratio: 1;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+/* variables */
+
+:root {
+  --color-bg: #eee;
+  --color-main: #393E46;
+  --color-secondary: #222831;
+  --color-accent: #00ADB5;
+  --color-white: #fff;
+  --color-warning: #ff746c;
+}
+

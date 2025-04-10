@@ -1,4 +1,5 @@
-import styles from './Taks.module.scss'
+import styles from './Taks.module.scss';
+import clsx from 'clsx';
 
 interface TaskProps {
   id: string,
@@ -8,8 +9,26 @@ interface TaskProps {
 
 const Task = ({ id, text, isCompleted }: TaskProps) => {
   return (
-    <li className={styles.task}>
-      {text}
+    <li id={id} className={clsx(styles.task, isCompleted && styles.completed)}>
+      <p className={styles.text}>
+        {text}
+      </p>
+      <div className={styles.buttonGroup}>
+        <button className={clsx('button', styles.buttonDelete)}>
+          <img
+            src={'/icons/cross.svg'}
+            alt="Удалить задачу"
+            className={clsx('buttonIcon', styles.iconArrow)}
+          />
+        </button>
+        <button className={clsx('button', styles.buttonCheck)}>
+          <img
+            src={'/icons/check.svg'}
+            alt="Выполнить задачу"
+            className={clsx('buttonIcon', styles.iconArrow)}
+          />
+        </button>
+      </div>
     </li>
   );
 };
