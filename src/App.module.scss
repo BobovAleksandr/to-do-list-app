@@ -182,7 +182,7 @@
   max-width: 1rem;
 }
 
-@media (width <= 375px) {
+@media (width <= 440px) {
 
   ::-webkit-scrollbar {
     display: none;
@@ -200,6 +200,7 @@
 
   .radio {
     width: auto;
+    padding-inline: 1rem;
   }
 
   .buttonClear {
