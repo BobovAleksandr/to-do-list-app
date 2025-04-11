@@ -9,7 +9,7 @@
 
 .content {
   position: relative;
-  width: clamp(375px, 100%, 480px);
+  width: clamp(320px, 100%, 480px);
   background-color: var(--color-white);
   border-radius: 0.5rem;
   max-height: 80vh;
@@ -24,8 +24,6 @@
     border-radius: 4px;
   }
 }
-
-
 
 .header {
   position: sticky;
@@ -154,6 +152,7 @@
   background-color: var(--color-white);
   padding: 2rem;
   background: linear-gradient(to top, var(--color-white) 90%, rgba(255,255,255, 0) 100%);
+  align-items: center;
 }
 
 .tasksLeft {
@@ -181,4 +180,29 @@
 
 .clearIcon {
   max-width: 1rem;
+}
+
+@media (width <= 375px) {
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .content {
+    max-height: 90vh;
+  }
+
+  .header,
+  .main,
+  .footer {
+    padding-inline: 1rem;
+  }
+
+  .radio {
+    width: 100%;
+  }
+
+  .buttonClear {
+    max-width: 10rem;
+  }
 }
