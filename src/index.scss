@@ -22,6 +22,10 @@ fieldset {
   border: none;
 }
 
+button {
+  font: inherit;
+  color: inherit;
+}
 
 /* fonts */
 
@@ -47,6 +51,11 @@ body {
   &:hover {
     cursor: pointer;
   }
+
+  &:active .buttonIcon{
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+  }
 }
 
 .buttonIcon {
@@ -66,7 +75,7 @@ button {
 :root {
   --color-bg: #eee;
   --color-main: #222831;
-  --color-secondary: #999;
+  --color-secondary: #bbb;
   --color-accent: #00ADB5;
   --color-white: #fff;
   --color-warning: #ff746c;

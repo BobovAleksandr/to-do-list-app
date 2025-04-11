@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "clsx": "^2.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sass": "^1.86.3"
+    "sass": "^1.86.3",
+    "use-local-storage": "^3.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
