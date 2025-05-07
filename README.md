@@ -30,8 +30,7 @@ npm start
 1. Next.js
 2. TypeScript
 3. Module CSS (SCSS)
-4. Zustand
-5. Vite
+4. Vite
 
 ## Структура
 - ``` src/components ``` - компоненты
