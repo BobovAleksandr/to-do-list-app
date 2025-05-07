@@ -37,4 +37,3 @@ npm start
 - ``` src/components ``` - компоненты
 - ``` src/hooks ``` - хуки
 - ``` src/types ``` - типы
-- ``` src/types ``` - типы 
